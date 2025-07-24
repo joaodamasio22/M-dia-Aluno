@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de Aluno</title>
+    <link rel="stylesheet" href="styles/media.css">
+</head>
+<body>
+    <header>
+        <h1>Calcule a média de um aluno para saber se o Aluno foi APROVADO, REPROVADO ou está de RECUPERÇÃO.</h1>
+    </header>
+    <section>
+        <div id="container">
+        
+        <div id="informacoes">
+            <p>NOME:
+                <input type="text" name="txtname" id="nome">
+            </p>
+            <p>
+                Classe:
+            </p>
+            <p>
+                    <div id="classe">
+                        <input type="radio" name="radano" id="1_ano" checked>
+                        1 Ano
+                        <input type="radio" name="radano" id="2_ano">
+                        <label for="2_ano">2 Ano</label>
+                        <input type="radio" name="radano" id="3_ano">
+                        <label for="3_ano">3 Ano</label>
+                    </div>
+            </p>
+                <p>
+                    1 Bimestre
+                    <input type="number" name="nota" id="nota_1">
+                </p>
+                <p>
+                    2 Bimestre
+                    <input type="number" name="nota" id="nota_2">
+                </p>
+                <p>
+                    3 Bimestre
+                    <input type="number" name="nota" id="nota_3">
+                </p>
+                <p>
+                    4 Bimestre
+                    <input type="number" name="nota" id="nota_4">
+                </p>
+            <input type="button" value="Verificar" onclick="verificar()" id="botao__verificar">
+            </div>
+            <div id="res">
+                <p>Para saber o resultado, preencha as informações acima</p>
+             </div>
+    </section>
+    <script src="styles/media.js"></script>
+</body>
+</html>
